@@ -1,0 +1,17 @@
+/* WishlistButton Component Styles */
+
+.wishlist-button {
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    background-color: #fff;
+    cursor: pointer;
+    transition: background-color 0.2s, color 0.2s;
+  }
+  
+  .wishlist-added {
+    background-color: red;
+    color: #fff;
+  }
+  

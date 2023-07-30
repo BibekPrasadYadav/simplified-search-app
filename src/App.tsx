@@ -1,26 +1,19 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import SearchTab from './components/SearchTab/SearchTab';
+import WishlistButton from './components/WishlistButton/WishlistButton';
+import './App.scss';
 
-function App() {
+const App: React.FC = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="app-container">
+      <SearchTab />
+      <div className="product-list">
+        {/* Product items will be dynamically added here */}
+      </div>
+      <WishlistButton />
     </div>
   );
-}
+};
 
 export default App;
+
